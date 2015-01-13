@@ -1,3 +1,73 @@
+## Version 1.9.0
+* Preset: update wikimedia preset (Timo Tijhof)
+* Preset: update crockford preset (Jackson Ray Hamilton)
+
+* New Rules: (require | disallow)SpaceBetweenArguments (James Allardice)
+* New Rules: requireLineBreakAfterVariableAssignment (jdlrobson)
+* New Rules: disallowSemicolons (Christopher Cliff)
+
+* CLI: relative path resolving fix (mdevils)
+* requireCurlyBraces: correctly set error pointer (Oleg Gaidarenko)
+* requireOperatorBeforeLineBreak: Detect binary operator after literal (Lucas Cimon)
+* requireCapitalizedComments: correct letter recognition (alawatthe)
+
+* CLI: Remove duplicated error reporting code paths (Mike Sherov)
+* CLI: remove duplicated preset existence check (Mike Sherov)
+* Iterator: extend estraverse rules to support JSX (Yannick Croissant)
+* Iterator: use estraverse in tree-iterator. (mdevils)
+* CLI: Move configuration override to node-configuration (Mike Sherov)
+
+* Docs: small correction to contributing guide (Oleg Gaidarenko)
+* Docs: fixed incorrect rule name in example (alawatthe)
+* Docs: added keywords for Googleability (Devin Ekins)
+* Docs: Correct documentation for disallowOperatorBeforeLineBreak (jdlrobson)
+* Docs: Added quotes for uniformity (Callum Macrae)
+* Docs: Typo fix (Alexander Sofin)
+* Docs: fix urls to yandex codestyle (Andrey Morozov)
+
+## Version 1.8.1
+ * Assertions: always allow new lines in whitespaceBetween (Henry Zhu)
+ * Tests: reorganization, full coverage for JsFile (mdevils)
+
+## Version 1.8.0
+ * Preset: Grunt (Joel Kemp)
+ * Preset: remove "disallowMultipleLineBreaks" rule from crockford preset (Oleg Gaidarenko)
+
+ * New Rules: disallowOperatorBeforeLineBreak (jdlrobson)
+ * New Rules: (require | disallow)PaddingNewlinesBeforeKeywords (Anton Vishnyak)
+ * New Rules: disallowSpaceBeforeKeywords (Bryan Donovan)
+ * New Rules: requireSpaceBeforeKeywords (Bryan Donovan)
+
+ * Parsing: Ability to specify a custom esprima version via CLI or config (Konstantin Tarkus)
+ * Errors: Support a filter to control which errors are reported (Joel Kemp)
+ * Assertions: better rule error reporting. (mdevils)
+ * Better configuration, plugin support (mdevils)
+
+ * disallowDanglingUnderscores: Support an array of additional exceptions (Henry Zhu)
+ * requireTrailingComma: add option ignoreSingleLine (eltacodeldiablo)
+ * StringChecker: unsupported rules shown as style errors and not thrown exceptions (Joel Kemp)
+ * Iterate over "export" statement of ES6 (Oleg Gaidarenko)
+ * disallowMultipleVarDecl: add exception for undefined variable declarations (Henry Zhu)
+ * disallowDanglingUnderscores: add "super_" to allowed identifier list (Markus Dolic)
+ * disallowSpacesInAnonymousFunctionExpression: set correct error pointer (Oleg Gaidarenko)
+ * requireSpaceAfterLineComment: add "except" option (Alexej Yaroshevich)
+
+ * validateParameterSeparator: fix for multiple spaces between parameters (Henry Zhu)
+ * Added test and patch for `finally` as a spaced keyword (Todd Wolfson)
+ * requireCapitalizedComments: Better support for multi-line comments (indexzero)
+ * disallowSpaceBeforeKeywords: Fix assertion typo (Jeremy Fleischman)
+ * Errors: Simplify rules debugging and prevent crashes in error reporters (Alexej Yaroshevich)
+ * Correct error message for "requireSpaceAfterKeywords" rule (Bryan Donovan)
+
+ * Docs: Fix Yandex codestyle link (Garmash Nikolay)
+ * Docs: Added clarification of tokens in disallowSpacesInConditionalExpression (indexzero)
+ * Docs: add twitter and mailling list links (Oleg Gaidarenko)
+ * Docs: add more specific cases for function spaces rules (Henry Zhu)
+ * Docs: make indentation to be consistent at 4 spaces (Henry Zhu)
+ * Docs: Correct docs for requireAnonymousFunctions rule (Oleg Gaidarenko)
+ * Docs: Clarify "config" option (MaximAL)
+ * Docs: Add Plugins section (Alexej Yaroshevich)
+
 ## Version 1.7.3
  * Parsing: Use the harmony parser via the esnext flag in the config (Joel Kemp)
  * validateIndentation: handle breakless case statements (Mike Sherov)
